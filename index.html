@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <button class="menu-btn">☰</button>
+            <span class="ai-label">AI Assistant</span>
+            <button class="profile-btn">👤</button>
+        </header>
+        
+        <main>
+            <div class="welcome-section">
+                <h1>Hey there! 👋</h1>
+                <p>I'm your assistant.<br>How can I assist you today..?</p>
+                <div class="chat-indicator">
+                    <img src="https://cdn.jsdelivr.net/npm/heroicons/outline/chat.svg" alt="chat" class="chat-icon">
+                    Chat with Chatbot...
+                </div>
+            </div>
+
+            <div class="quick-access">
+                <h2>Quick Access</h2>
+                <div class="cards-container">
+                    <div class="quick-card">
+                        <div class="card-icon health">🫀</div>
+                        <h3>Health</h3>
+                        <p>Let's manage health condition and track your body fitness now</p>
+                    </div>
+                    <div class="quick-card">
+                        <div class="card-icon entertainment">🎮</div>
+                        <h3>Entertainment</h3>
+                        <p>Recommendations based on preferences and interests</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recent-section">
+                <h2>Recent Prompt</h2>
+                <div class="recent-prompts">
+                    <div class="prompt-item">
+                        <img src="https://cdn.jsdelivr.net/npm/heroicons/outline/clock.svg" alt="recent" class="prompt-icon">
+                        <span>Previous conversations will appear here</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button onclick="sendMessage()" class="send-btn">
+                <img src="https://cdn.jsdelivr.net/npm/heroicons/outline/paper-airplane.svg" alt="send" class="send-icon">
+            </button>
+        </div>
+    </div>
+    <script type="module" src="/script.js"></script>
+</body>
+</html>
